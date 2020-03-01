@@ -1,0 +1,9 @@
+{% if parents_list %}
+    <ul>
+    {% for parent in parents_list %}
+        <li><a href="/rentals/{{ parent.id }}/">{{ parent.email_address }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No parents are listed.</p>
+{% endif %}

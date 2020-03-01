@@ -1,7 +1,15 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404
+
+from .models import Parent
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the clothing rental index.")
+	parents_list = Parent.objects.order_by(email_address)
+	template = loader.get_template('rentals/index.html')
+	context = {
+		'parents_list': parents_list,
+	}
+	return render(request, 'rentals/index.html', context)
 
-# Create your views here.
+def parentDetails(request, parent_id):
+	parent = get_object_or_404(Parent, pk=parent_id)
+	return render(request, 'rentals/parentDetails.html', {'parent': parent})
