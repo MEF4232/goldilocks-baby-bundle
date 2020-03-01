@@ -3,8 +3,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import Parent
 
 def index(request):
-	parents_list = Parent.objects.order_by(email_address)
-	template = loader.get_template('rentals/index.html')
+	parents_list = Parent.objects.order_by('email_address')
 	context = {
 		'parents_list': parents_list,
 	}

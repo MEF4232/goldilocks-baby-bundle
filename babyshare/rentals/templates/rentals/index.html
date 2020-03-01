@@ -1,7 +1,7 @@
 {% if parents_list %}
     <ul>
     {% for parent in parents_list %}
-        <li><a href="/rentals/{{ parent.id }}/">{{ parent.email_address }}</a></li>
+        <li><a href="{% url 'rentals:parentDetails' parent.id %}">{{ parent }}</a></li>
     {% endfor %}
     </ul>
 {% else %}

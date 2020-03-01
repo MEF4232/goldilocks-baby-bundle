@@ -6,4 +6,4 @@ class Parent(models.Model):
 	email_address = models.EmailField(unique = True)
 	
 	def __str__(self):
-		return f'{self.first_name} {self.last_name}, {self.email_address}'
+		return f'{self.first_name} {self.last_name} ({self.email_address})'
