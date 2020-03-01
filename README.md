@@ -47,21 +47,21 @@ tables
 
 categories
 
-- short sleeve shirts
-- long sleeve shirts
-- shorts
-- pants
-- short sleeve onesie
-- long sleeve onesie
-- short sleeve dress
-- long sleeve dress
+- tops
+- bottoms
+- onesie
+- dress
 - socks
 - boots
 - sneakers
 - sandals
 - hats
-- light jackets
-- heavy jackets
-- one piece bathing suits
-- bathing suit shirts
-- bathing suit shorts
+- jacket
+- swim suits
+- swim shorts
+
+subcategories
+- short
+- long
+- light
+- heavy
