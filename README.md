@@ -23,5 +23,45 @@ target audience
 
 
 competition
+
 - stitch fix https://www.stitchfix.com/
 - amazon https://www.amazon.com/
+
+
+website
+
+- goldilocksbabybundle.online
+- atharvadhupkar18@gmail.com
+- Shellyourclothes4-4
+
+
+tables
+
+- parent: email address
+- child: birthday
+- shopping cart: category with price, items with count, calculate subtotals and total
+- subscription: length, cost
+- item: name, size, season, categories
+- category (and subcategory?)
+
+
+categories
+
+- short sleeve shirts
+- long sleeve shirts
+- shorts
+- pants
+- short sleeve onesie
+- long sleeve onesie
+- short sleeve dress
+- long sleeve dress
+- socks
+- boots
+- sneakers
+- sandals
+- hats
+- light jackets
+- heavy jackets
+- one piece bathing suits
+- bathing suit shirts
+- bathing suit shorts
