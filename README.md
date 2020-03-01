@@ -1,4 +1,4 @@
-# baby-share
+# goldilocks-baby-bundle
 
 project outline
 
