@@ -4,3 +4,6 @@ class Parent(models.Model):
 	first_name = models.CharField(max_length=200)
 	last_name = models.CharField(max_length=200)
 	email_address = models.EmailField(unique = True)
+	
+	def __str__(self):
+		return f'Name: {self.first_name} {self.last_name}, Email Address: {self.email_address}'
