@@ -1,4 +1,4 @@
-# baby-share
+# goldilocks-baby-bundle
 
 project outline
 
@@ -23,5 +23,45 @@ target audience
 
 
 competition
+
 - stitch fix https://www.stitchfix.com/
 - amazon https://www.amazon.com/
+
+
+website
+
+- goldilocksbabybundle.online
+- atharvadhupkar18@gmail.com
+- Shellyourclothes4-4
+
+
+tables
+
+- parent: email address
+- child: birthday
+- shopping cart: category with price, items with count, calculate subtotals and total
+- subscription: length, cost
+- item: name, size, season, categories
+- category (and subcategory?)
+
+
+categories
+
+- tops
+- bottoms
+- onesie
+- dress
+- socks
+- boots
+- sneakers
+- sandals
+- hats
+- jacket
+- swim suits
+- swim shorts
+
+subcategories
+- short
+- long
+- light
+- heavy
