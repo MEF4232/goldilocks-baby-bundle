@@ -14,18 +14,3 @@ class ParentModelTests(TestCase):
 			# https://docs.python.org/3/library/unittest.mock.html
 			# https://stackoverflow.com/questions/27813027/django-python-unittesting-how-to-force-exception-of-try-except-block
 			pass
-
-class ItemModelTests(TestCase):
-
-	def test_nothing(self):
-		pass
-		
-class ItemSizeModelTests(TestCase):
-
-	def test_nothing(self):
-		pass
-		
-class ItemSeasonModelTests(TestCase):
-
-	def test_nothing(self):
-		pass
