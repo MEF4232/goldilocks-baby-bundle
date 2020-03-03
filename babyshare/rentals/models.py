@@ -25,8 +25,8 @@ class Item(models.Model):
 		('l', 'Light'),
 	)
 	
-	subcategory_length = model.CharField(max_length=1, choices=SUBCAT_LEN, default='n', help_text='Choose whether item is long or short. (e.g. jeans are long, t-shirts are short, hats are Not Applicable)', verbose_name='Item Length')
-	subcategory_weight = model.CharField(max_length=1, choices=SUBCAT_W, default='n', help_text='Choose whether item is heavy or light. (e.g. winter jackets are heavy, t-shirts are light)', verbose_name='Item Weight')
+	subcategory_length = models.CharField(max_length=1, choices=SUBCAT_LEN, default='n', help_text='Choose whether item is long or short. (e.g. jeans are long, t-shirts are short, hats are Not Applicable)', verbose_name='Item Length')
+	subcategory_weight = models.CharField(max_length=1, choices=SUBCAT_W, default='n', help_text='Choose whether item is heavy or light. (e.g. winter jackets are heavy, t-shirts are light)', verbose_name='Item Weight')
 	
 	def __str__(self):
 		return self.name
