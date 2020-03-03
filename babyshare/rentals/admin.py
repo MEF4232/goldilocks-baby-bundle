@@ -12,10 +12,11 @@ admin.site.register(Parent, ParentAdmin)
 
 class ItemAdmin(admin.ModelAdmin):
 	list_display = ('id', 'name')
-	list_filter = ['size', 'season']
+	list_filter = ['size', 'season', 'category', 'subcategory_length', 'subcategory_weight']
 	search_fields = ['name']
 
 admin.site.register(Item, ItemAdmin)
 
 admin.site.register(ItemSize)
 admin.site.register(ItemSeason)
+admin.site.register(ItemCategory)

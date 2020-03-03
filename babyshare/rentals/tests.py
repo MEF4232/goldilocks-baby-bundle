@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from .models import Parent
+from .models import *
 
 class ParentModelTests(TestCase):
 	
@@ -26,6 +26,11 @@ class ItemSizeModelTests(TestCase):
 		pass
 		
 class ItemSeasonModelTests(TestCase):
+
+	def test_nothing(self):
+		pass
+
+class ItemCategoryModelTests(TestCase):
 
 	def test_nothing(self):
 		pass
