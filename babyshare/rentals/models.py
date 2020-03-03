@@ -1,13 +1,31 @@
 from django.db import models
+from datetime import date
+
+###############################################################################
+# USERS
+###############################################################################
 
 class Parent(models.Model):
 	first_name = models.CharField(max_length=200)
 	last_name = models.CharField(max_length=200)
 	email_address = models.EmailField(unique = True)
+	date_joined = models.DateField(default=date.today, editable=False)
 	
 	def __str__(self):
 		return f'{self.first_name} {self.last_name}'
-		
+
+class Child(models.Model):
+	name = models.CharField(max_length=200)
+	birthday = models.DateField()
+	parent = models.ForeignKey(Parent, on_delete=models.PROTECT, null=True)
+	
+	def __str__(self):
+		return self.name
+
+###############################################################################
+# ITEMS
+###############################################################################
+
 class Item(models.Model):
 	name = models.CharField(max_length=200)
 	size = models.ForeignKey('ItemSize', help_text='Select the size of the item.', on_delete=models.PROTECT, null=True)

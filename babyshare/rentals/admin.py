@@ -10,6 +10,14 @@ class ParentAdmin(admin.ModelAdmin):
 
 admin.site.register(Parent, ParentAdmin)
 
+class ChildAdmin(admin.ModelAdmin):
+	date_hierarchy = 'birthday'
+	list_display = ('id', 'name', 'birthday', 'parent')
+	list_filter = ['birthday']
+	search_fields = ['name', 'parent']
+
+admin.site.register(Child, ChildAdmin)
+
 class ItemAdmin(admin.ModelAdmin):
 	list_display = ('id', 'name')
 	list_filter = ['size', 'season', 'category', 'subcategory_length', 'subcategory_weight']
