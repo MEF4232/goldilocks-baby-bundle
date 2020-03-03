@@ -33,9 +33,3 @@ website
 - goldilocksbabybundle.online
 - atharvadhupkar18@gmail.com
 - Shellyourclothes4-4
-
-
-tables
-
-- shopping cart: category with price, items with count, calculate subtotals and total
-- subscription: length, cost
