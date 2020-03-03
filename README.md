@@ -37,31 +37,6 @@ website
 
 tables
 
-- parent: email address
 - child: birthday
 - shopping cart: category with price, items with count, calculate subtotals and total
 - subscription: length, cost
-- item: name, size, season, categories
-- category (and subcategory?)
-
-
-categories
-
-- tops
-- bottoms
-- onesie
-- dress
-- socks
-- boots
-- sneakers
-- sandals
-- hats
-- jacket
-- swim suits
-- swim shorts
-
-subcategories
-- short
-- long
-- light
-- heavy
