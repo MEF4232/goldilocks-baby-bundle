@@ -12,7 +12,7 @@ class Item(models.Model):
 	name = models.CharField(max_length=200)
 	size = models.ForeignKey('ItemSize', help_text='Select the size of the item.', on_delete=models.PROTECT, null=True)
 	season = models.ManyToManyField('ItemSeason', help_text='Select all relevant seasons.')
-	category = models.ManyToManyField('ItemCategory', help_text='Select the category of the item.')
+	category = models.ForeignKey('ItemCategory', help_text='Select the category of the item.', on_delete=models.PROTECT, null=True, verbose_name='Categories')
 	
 	SUBCAT_LEN = (
 		('n', 'Not Applicable'),
