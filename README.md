@@ -37,6 +37,5 @@ website
 
 tables
 
-- child: birthday
 - shopping cart: category with price, items with count, calculate subtotals and total
 - subscription: length, cost
